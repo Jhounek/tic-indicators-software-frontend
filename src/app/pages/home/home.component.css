@@ -1,0 +1,46 @@
+.main-btn.video-popup {
+    --text-opacity: 1;
+    color: #3182ce;
+    color: rgba(49, 130, 206, var(--text-opacity));
+    --bg-opacity: 1;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, var(--bg-opacity));
+    transition: linear .5s;
+  }
+  
+  .main-btn.video-popup:hover {
+    --bg-opacity: 1;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, var(--bg-opacity));
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    transition: linear .5s;
+  }
+  .gradient-btn {
+    background-image: linear-gradient(to right, #f3f353 0%, #f1601c 50%, #ece24e 100%);
+    background-size: 200% auto;
+    overflow: hidden;
+    transition: linear .5s;
+  }
+  
+  .gradient-btn:hover {
+    background-position: right center;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    transition: linear .5s;
+  }
+  .main-btn.video-popup {
+    --text-opacity: 1;
+    color: #3182ce;
+    color: rgba(49, 130, 206, var(--text-opacity));
+    --bg-opacity: 1;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, var(--bg-opacity));
+    transition: linear .5s;
+  }
+  
+  .main-btn.video-popup:hover {
+    --bg-opacity: 1;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, var(--bg-opacity));
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(243, 243, 240, 0.04);
+    transition: linear .5s;
+  }
