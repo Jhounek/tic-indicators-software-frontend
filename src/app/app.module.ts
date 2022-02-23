@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { HeaderComponent } from './component/header/header.component';
 import { FooterComponent } from './component/footer/footer.component';
+import { CreateEmployeeComponent } from './pages/create-employee/create-employee.component';
+import { CreateTeamComponent } from './pages/create-team/create-team.component';
 
 @NgModule({
   declarations: [
@@ -12,6 +14,8 @@ import { FooterComponent } from './component/footer/footer.component';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
+    CreateEmployeeComponent,
+    CreateTeamComponent
   ],
   imports: [
     BrowserModule,
