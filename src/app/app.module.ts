@@ -10,6 +10,8 @@ import { CreateTeamComponent } from './pages/create-team/create-team.component';
 import { CreateHelpDeskComponent } from './pages/create-help-desk/create-help-desk.component';
 import { CreateProjectComponent } from './pages/create-project/create-project.component';
 import { CreateMoneyComponent } from './pages/create-money/create-money.component';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,9 +27,14 @@ import { CreateMoneyComponent } from './pages/create-money/create-money.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
-  providers: [],
+  providers: [
+    HttpClient,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
