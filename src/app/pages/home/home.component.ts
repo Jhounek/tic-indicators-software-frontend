@@ -30,7 +30,7 @@ export class HomeComponent implements OnInit {
       logoUrl: 'https://picsum.photos/50/50',
       title: 'Mesa de ayuda',
       route: 'create-help-desk',
-      description: ''
+      description: 'Registra los datos para Mesa de ayuda'
     },
     {
       imgUrl: 'https://picsum.photos/500/300',
@@ -44,21 +44,21 @@ export class HomeComponent implements OnInit {
       logoUrl: 'https://picsum.photos/50/50',
       title: 'Pesos',
       route: 'create-money',
-      description: ''
+      description: 'Registra los datos a la hoja Pesos'
     },
     {
       imgUrl: 'https://picsum.photos/500/300',
       logoUrl: 'https://picsum.photos/50/50',
       title: 'Servicios',
-      route: '',
-      description: ''
+      route: 'create-availability-services',
+      description: 'No se que poner'
     },
     {
       imgUrl: 'https://picsum.photos/500/300',
       logoUrl: 'https://picsum.photos/50/50',
       title: 'Niveles de servicio',
-      route: '',
-      description: ''
+      route: 'create-service-levels',
+      description: 'No se que poner'
     },
   ]
 
