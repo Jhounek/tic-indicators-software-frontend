@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-home',
@@ -6,10 +7,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  options:boolean = true;
-  constructor() { }
+  viewCreate: boolean = false;
+  viewConsult: boolean = false;
+
+  constructor(
+  ) { }
 
   ngOnInit(): void {
+    $('#viewCreate').slideUp();
+    $('#viewConsult').slideUp();
+  }
+
+  showCreate() {
+    $('#viewConsult').slideUp(2000);
+    $('#viewCreate').slideDown(2000);
+  }
+
+  showConsult() {
+    $('#viewCreate').slideUp(2000);
+    $('#viewConsult').slideDown(2000);
   }
 
 }
