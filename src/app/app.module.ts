@@ -7,6 +7,9 @@ import { HeaderComponent } from './component/header/header.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { CreateEmployeeComponent } from './pages/create-employee/create-employee.component';
 import { CreateTeamComponent } from './pages/create-team/create-team.component';
+import { CreateHelpDeskComponent } from './pages/create-help-desk/create-help-desk.component';
+import { CreateProjectComponent } from './pages/create-project/create-project.component';
+import { CreateMoneyComponent } from './pages/create-money/create-money.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { CreateTeamComponent } from './pages/create-team/create-team.component';
     HeaderComponent,
     FooterComponent,
     CreateEmployeeComponent,
-    CreateTeamComponent
+    CreateTeamComponent,
+    CreateHelpDeskComponent,
+    CreateProjectComponent,
+    CreateMoneyComponent
   ],
   imports: [
     BrowserModule,
