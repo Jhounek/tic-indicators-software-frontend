@@ -12,6 +12,8 @@ import { CreateProjectComponent } from './pages/create-project/create-project.co
 import { CreateMoneyComponent } from './pages/create-money/create-money.component';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CreateAvailabilityServicesComponent } from './pages/create-availability-services/create-availability-services.component';
+import { CreateServiceLevelsComponent } from './pages/create-service-levels/create-service-levels.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CreateTeamComponent,
     CreateHelpDeskComponent,
     CreateProjectComponent,
-    CreateMoneyComponent
+    CreateMoneyComponent,
+    CreateAvailabilityServicesComponent,
+    CreateServiceLevelsComponent
   ],
   imports: [
     BrowserModule,
