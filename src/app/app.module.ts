@@ -10,6 +10,8 @@ import { CreateTeamComponent } from './pages/create-team/create-team.component';
 import { CreateHelpDeskComponent } from './pages/create-help-desk/create-help-desk.component';
 import { CreateProjectComponent } from './pages/create-project/create-project.component';
 import { CreateMoneyComponent } from './pages/create-money/create-money.component';
+import { CreateAvailabilityServicesComponent } from './pages/create-availability-services/create-availability-services.component';
+import { CreateServiceLevelsComponent } from './pages/create-service-levels/create-service-levels.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { CreateMoneyComponent } from './pages/create-money/create-money.componen
     CreateTeamComponent,
     CreateHelpDeskComponent,
     CreateProjectComponent,
-    CreateMoneyComponent
+    CreateMoneyComponent,
+    CreateAvailabilityServicesComponent,
+    CreateServiceLevelsComponent
   ],
   imports: [
     BrowserModule,

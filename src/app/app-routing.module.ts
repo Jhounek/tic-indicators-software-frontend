@@ -6,6 +6,8 @@ import { CreateTeamComponent } from './pages/create-team/create-team.component';
 import { CreateHelpDeskComponent } from './pages/create-help-desk/create-help-desk.component';
 import { CreateProjectComponent} from './pages/create-project/create-project.component';
 import { CreateMoneyComponent} from './pages/create-money/create-money.component';
+import { CreateAvailabilityServicesComponent} from './pages/create-availability-services/create-availability-services.component';
+import { CreateServiceLevelsComponent} from './pages/create-service-levels/create-service-levels.component';
 const routes: Routes = [
    {
      path: '',
@@ -37,7 +39,18 @@ const routes: Routes = [
   {
     path: 'create-money',
     component: CreateMoneyComponent,
+  },
+
+  {
+    path: 'create-availability-services',
+    component: CreateAvailabilityServicesComponent,
+  },
+
+  {
+    path: 'create-service-levels',
+    component: CreateServiceLevelsComponent,
   }
+
 
 
 
