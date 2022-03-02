@@ -1,5 +1,112 @@
 <app-header></app-header>
 <div class="min-h-screen">
-    <p>Consulta hoja de pesos si funciona</p>
+  <div class="flex flex-col">
+    <div class="mt-36 overflow-x-scroll">
+      <div class="py-2 align-middle inline-block min-w-full px-6 ">
+        <div class="flex shadow border-b border-gray-200 sm:rounded-lg ">
+          <table class="w-full divide-y divide-gray-200">
+            <thead class="bg-gray-700">
+              <tr>
+                <th scope="col"
+                  class="px-6 py-3 text-center text-xs font-medium text-yellow-200 uppercase tracking-wider">
+                  Periodo</th>
+                <th scope="col"
+                  class="px-6 py-3 text-center text-xs font-medium text-yellow-200 uppercase tracking-wider">
+                  Numero de identificación</th>
+                <th scope="col"
+                  class="px-6 py-3 text-center text-xs font-medium text-yellow-200 uppercase tracking-wider">
+                  Empleado</th>
+                <th scope="col"
+                  class="px-6 py-3 text-center text-xs font-medium text-yellow-200 uppercase tracking-wider">
+                  Cargo</th>
+                <th scope="col"
+                  class="px-6 py-3 text-center text-xs font-medium text-yellow-200 uppercase tracking-wider">
+                  Cumplimiento de actividades proyectos TIC</th>
+                <th scope="col"
+                  class="px-6 py-3 text-center text-xs font-medium text-yellow-200 uppercase tracking-wider">
+                  Mesa de ayuda</th>
+                <th scope="col"
+                  class="px-6 py-3 text-center text-xs font-medium text-yellow-200 uppercase tracking-wider">
+                  Disponibilidad de servicio</th>
+                <th scope="col"
+                  class="px-6 py-3 text-center text-xs font-medium text-yellow-200 uppercase tracking-wider">
+                  Niveles de servicio</th>
+              </tr>
+            </thead>
+            <tbody class="bg-white divide-y divide-gray-200" *ngFor="let money of listMoney">
+              <tr>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-500 text-center">{{money.monht}}-{{money.year}}
+                  </div>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-500 text-center">{{money.identification_number}}</div>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-500 text-center">{{money.employee_name}}</div>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-500 text-center">{{money.role_name}}</div>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-500 text-center">{{money.cumplimiento_actividades}}%</div>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-500 text-center">{{money.help_table}}%</div>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-500 text-center">{{money.provision_services}}%</div>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-500 text-center">{{money.service_levels}}</div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table class="w-auto divide-y divide-gray-200">
+            <thead class="bg-yellow-200">
+              <tr>
+                <th scope="col"
+                  class="px-6 py-3 text-center text-xs font-medium text-gray-700 uppercase tracking-wider">
+                  Cumplimiento de actividades proyectos TIC</th>
+                <th scope="col"
+                  class="px-6 py-3 text-center text-xs font-medium text-gray-700 uppercase tracking-wider">
+                  Mesa de ayuda</th>
+                <th scope="col"
+                  class="px-6 py-3 text-center text-xs font-medium text-gray-700 uppercase tracking-wider">
+                  Disponibilidad de servicio</th>
+                <th scope="col"
+                  class="px-6 py-3 text-center text-xs font-medium text-gray-700 uppercase tracking-wider">
+                  Niveles de servicio</th>
+                <th scope="col"
+                  class="px-6 py-3 text-center text-xs font-medium text-gray-700 uppercase tracking-wider">
+                  Bonificacion variable mes</th>
+              </tr>
+            </thead>
+            <tbody class="bg-white divide-y divide-gray-200" *ngFor="let money of listMoney">
+              <tr>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-500 text-center">{{money.project_totals}}</div>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-500 text-center">{{money.help_table_totals}}</div>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-500 text-center">{{money.provision_services_total}}</div>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-500 text-center">{{money.service_levels_total}}</div>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-500 text-center">{{money.bonuses}}</div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 <app-footer></app-footer>

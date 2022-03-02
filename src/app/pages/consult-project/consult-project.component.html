@@ -1,6 +1,82 @@
 <app-header></app-header>
 <div class="min-h-screen">
-    <p>Consulya de poryectos funciona</p>
+    <div class="flex flex-col">
+        <div class="mt-36">
+            <div class="py-2 align-middle inline-block min-w-full px-6">
+                <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
+                    <table class="w-full divide-y divide-gray-200">
+                        <thead class="bg-gray-700">
+                            <tr>
+                                <th scope="col"
+                                    class="px-6 py-3 text-center text-xs font-medium text-yellow-200 uppercase tracking-wider">
+                                    Periodo</th>
+                                <th scope="col"
+                                    class="px-6 py-3 text-center text-xs font-medium text-yellow-200 uppercase tracking-wider">
+                                    Numero de identificación</th>
+                                <th scope="col"
+                                    class="px-6 py-3 text-center text-xs font-medium text-yellow-200 uppercase tracking-wider">
+                                    Empleado</th>
+                                <th scope="col"
+                                    class="px-6 py-3 text-center text-xs font-medium text-yellow-200 uppercase tracking-wider">
+                                    Cargo</th>
+                                <th scope="col"
+                                    class="px-6 py-3 text-center text-xs font-medium text-yellow-200 uppercase tracking-wider">
+                                    Valor estandar - TIC</th>
+                                <th scope="col"
+                                    class="px-6 py-3 text-center text-xs font-medium text-yellow-200 uppercase tracking-wider">
+                                    Valor critico - TIC</th>
+                                <th scope="col"
+                                    class="px-6 py-3 text-center text-xs font-medium text-yellow-200 uppercase tracking-wider">
+                                    Actividades de cronograma proyectadas</th>
+                                <th scope="col"
+                                    class="px-6 py-3 text-center text-xs font-medium text-yellow-200 uppercase tracking-wider">
+                                    Actividades de cronograma proyectadas de proyecto ejecutadas</th>
+                                <th scope="col"
+                                    class="px-6 py-3 text-center text-xs font-medium text-yellow-200 uppercase tracking-wider">
+                                    Porcentaje cumplimiento de metas</th>
+                                <th scope="col"
+                                    class="px-6 py-3 text-center text-xs font-medium text-yellow-200 uppercase tracking-wider">
+                                    Porcentaje obtenido</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-gray-200" *ngFor="let project of listProjects">
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <div class="text-sm text-gray-500 text-center">{{project.monht}}-{{project.year}}</div>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <div class="text-sm text-gray-500 text-center">{{project.identification_number}}</div>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <div class="text-sm text-gray-500 text-center">{{project.employee_name}}</div>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <div class="text-sm text-gray-500 text-center">{{project.role_name}}</div>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <div class="text-sm text-gray-500 text-center">{{project.standard_value}}%</div>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <div class="text-sm text-gray-500 text-center">{{project.critical_value}}%</div>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <div class="text-sm text-gray-500 text-center">{{project.projected_activity}}</div>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <div class="text-sm text-gray-500 text-center">{{project.activity_executed}}</div>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <div class="text-sm text-gray-500 text-center">{{project.percentage_compliance*100}}%</div>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <div class="text-sm text-gray-500 text-center">{{project.percentage_obtained}}%</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <app-footer></app-footer>
-

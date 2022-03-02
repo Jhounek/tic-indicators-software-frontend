@@ -8,43 +8,35 @@
             <thead class="bg-gray-700">
               <tr>
                 <th scope="col"
-                  class="px-6 py-3 text-left text-xs font-medium text-yellow-200 uppercase tracking-wider">Tipo
+                  class="px-6 py-3 text-center text-xs font-medium text-yellow-200 uppercase tracking-wider">Tipo
                   documento</th>
                 <th scope="col"
-                  class="px-6 py-3 text-left text-xs font-medium text-yellow-200 uppercase tracking-wider">Numero
+                  class="px-6 py-3 text-center text-xs font-medium text-yellow-200 uppercase tracking-wider">Numero
                   documento</th>
                 <th scope="col"
-                  class="px-6 py-3 text-left text-xs font-medium text-yellow-200 uppercase tracking-wider">Empleado</th>
+                  class="px-6 py-3 text-center text-xs font-medium text-yellow-200 uppercase tracking-wider">Empleado</th>
                 <th scope="col"
-                  class="px-6 py-3 text-left text-xs font-medium text-yellow-200 uppercase tracking-wider">Cargo</th>
+                  class="px-6 py-3 text-center text-xs font-medium text-yellow-200 uppercase tracking-wider">Cargo</th>
                 <th scope="col"
-                  class="px-6 py-3 text-left text-xs font-medium text-yellow-200 uppercase tracking-wider">Equipo</th>
+                  class="px-6 py-3 text-center text-xs font-medium text-yellow-200 uppercase tracking-wider">Equipo</th>
               </tr>
             </thead>
             <tbody class="bg-white divide-y divide-gray-200" *ngFor="let employee of listEmployees">
               <tr>
                 <td class="px-6 py-4 whitespace-nowrap">
-                  <div class="flex items-center">
-                    <div class="ml-4">
-                      <div class="text-sm text-gray-500">{{employee.type_document_identification_id | general :
+                      <div class="text-sm text-gray-500 text-center">{{employee.type_document_identification_id | general :
                         listTypeDocument}}</div>
-                    </div>
-                  </div>
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap">
-                  <div class="flex items-center">
-                    <div class="ml-4">
-                      <div class="text-sm text-gray-500">{{employee.identification_number}}</div>
-                    </div>
-                  </div>
+                      <div class="text-sm text-gray-500 text-center">{{employee.identification_number}}</div>
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap">
                   <div class="text-sm text-gray-500">{{employee.name}}</div>
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap">
-                  <div class="text-sm text-gray-500">{{employee.role_id|general:listRoles}}</div>
+                  <div class="text-sm text-gray-500 text-center">{{employee.role_id|general:listRoles}}</div>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{{employee.team_id|general:listTeams}}
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-center text-gray-500">{{employee.team_id|general:listTeams}}
                 </td>
               </tr>
             </tbody>
