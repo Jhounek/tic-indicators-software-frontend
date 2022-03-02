@@ -14,6 +14,13 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CreateAvailabilityServicesComponent } from './pages/create-availability-services/create-availability-services.component';
 import { CreateServiceLevelsComponent } from './pages/create-service-levels/create-service-levels.component';
+import { ConsultEmployeeComponent } from './pages/consult-employee/consult-employee.component';
+import { ConsultMoneyComponent } from './pages/consult-money/consult-money.component';
+import { ConsultProjectComponent } from './pages/consult-project/consult-project.component';
+import { ConsultHelpDeskComponent } from './pages/consult-help-desk/consult-help-desk.component';
+import { ConsultAvailabilityServicesComponent } from './pages/consult-availability-services/consult-availability-services.component';
+import { ConsultServicesLevelsComponent } from './pages/consult-services-levels/consult-services-levels.component';
+import { GeneralPipe } from './pipes/general.pipe';
 
 @NgModule({
   declarations: [
@@ -27,7 +34,14 @@ import { CreateServiceLevelsComponent } from './pages/create-service-levels/crea
     CreateProjectComponent,
     CreateMoneyComponent,
     CreateAvailabilityServicesComponent,
-    CreateServiceLevelsComponent
+    CreateServiceLevelsComponent,
+    ConsultEmployeeComponent,
+    ConsultMoneyComponent,
+    ConsultProjectComponent,
+    ConsultHelpDeskComponent,
+    ConsultAvailabilityServicesComponent,
+    ConsultServicesLevelsComponent,
+    GeneralPipe
   ],
   imports: [
     BrowserModule,

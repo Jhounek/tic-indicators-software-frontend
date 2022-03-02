@@ -94,6 +94,7 @@ export class CreateEmployeeComponent implements OnInit {
       "identification_number": data['documentNumber'],
       "name": data['NameEmployee']
     };
+    this.formRegisterEmployee.reset();
     this._generalService.generateCreate(urlConsult, objRequest).subscribe(
       (res) => {
         console.log(res)
