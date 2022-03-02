@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import * as $ from 'jquery';
 
 @Component({
@@ -8,7 +9,9 @@ import * as $ from 'jquery';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router: Router,
+  ) { }
 
   ngOnInit(): void {
   }
@@ -17,6 +20,10 @@ export class HeaderComponent implements OnInit {
       $('html, body').animate({
         scrollTop: $(`#${id}`).offset()?.top
       },1500);
+  }
+
+  setRoute(query: any) {
+    this.router.navigate([query]);
   }
 
 }
